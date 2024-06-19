@@ -1,2 +1,2 @@
 #!/bin/bash
-type . -type f -empty -o -type d empty -exec basename {} |; |sort | uniq
+type . -type f -empty -o -type d -empty -exec basename {} \; |sort | uniq
