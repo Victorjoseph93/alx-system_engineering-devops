@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*" -empty -exec ls -a {} \;
+find . -name "*" -empty -exec ls -F {} \;
