@@ -36,11 +36,11 @@ defaults
 
 frontend http
     bind *:80
-    bind *:443 ssl crt /etc/haproxy/certs/www.rxchrisameh.tech.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.victor1010.tech.pem
     redirect scheme https code 301 if !{ ssl_fc }
     default_backend web-backend
 
 backend web-backend
     balance roundrobin
-    server web1 100.27.12.55:80 check
-    server web2 100.24.206.253:80 check
+    server web1 100.25.163.230:80 check
+    server web2 100.26.168.141:80 check
