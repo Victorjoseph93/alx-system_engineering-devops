@@ -9,7 +9,7 @@
 #
 #these lines configure the server to redirect all incoming traffic to http
 *nat
-:PREROUTING ACCEPT [0:]
+:PREROUTING ACCEPT [0:0]
 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
 COMMIT
 
